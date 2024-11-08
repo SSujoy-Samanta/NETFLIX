@@ -1,0 +1,297 @@
+ @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Simonetta&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(bg.jpg);
+    background-position: center  center;
+    /* background-size: max(1200px,100vw); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+nav{
+    max-width: 77vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+
+}
+nav .img {
+    color: red;
+    width: 170px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.button .btn1{
+    position: relative;
+    z-index: 10;
+    width: 122px;
+    height: 35px;
+    font-size: 20px;
+    background-color: rgba(23,23,23,0.8);
+    border: 1px solid rgba(234, 182, 182, 0.88);
+    color: white;
+    font:bold
+}
+.button .btn2{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(239, 9, 9);
+    color: white;
+    font: bold;
+    border: 1px solid rgba(177, 174, 174, 0.88);
+    margin: 0 0 0 10px;
+}
+.btn2:hover{
+    background-color: rgb(194, 101, 85);
+}
+.hero{
+    /* margin: -50px; */
+    height:calc(100% - 110.04px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Edu NSW ACT Foundation'cursive;
+    font-family: 'Simonetta', serif;
+    gap: 25px;
+    padding: 0  30px;
+}
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 4vw;
+    font:bold;
+    text-align: center;
+   
+}
+.hero> :nth-child(2){
+    font-size: 30px;
+    text-align: center;
+  
+}
+.hero> :nth-child(3){
+    font-size: 30px;
+    text-align: center;
+}
+.email{
+    display: flex;
+    gap: 10px;
+}
+.email input{
+    width: 25vw;
+    height: 7vh;
+    border: 1px solid rgba(89, 86, 86, 0.88);
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: rgba(23,23,23,0.8);
+    line-height: 1.5;
+    font: bold;
+    color: white;
+    padding: 0 0 0 15px;
+
+}
+/* .email input:hover{
+    background-color: white;
+} */
+.email button{
+    width: 8vw;
+    height: 7vh;
+    border: 1px solid rgba(234, 182, 182, 0.88);
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: red;
+    line-height: 1.5;
+    cursor: pointer;
+    color: white;
+    font: bold;
+}
+.email button:hover{
+    background-color: rgb(228, 95, 95);
+}
+.septration{
+    height: 8px;
+    background-color: grey;
+}
+.first{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    width: 555px;
+    position: relative;
+    z-index: 1;
+}
+.secimg video{
+    position: absolute;
+    top: 83px;
+    right: 0px;
+}
+.text>:first-child{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.text>:nth-child(2){
+    font-size: 20px;
+}
+.second>:first-child{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.faq h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 80px 0 30px 0;
+}
+.faq{
+    background-color: black;
+}
+.faqbox{
+    display: flex;
+    background-color: rgb(45, 43, 43);
+    justify-content: space-between;
+    padding: 35px;
+    color: white;
+    padding: 20px;
+    max-width: 60vw;
+    margin: auto auto 15px auto;
+    font-size: 25px;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+.faqbox img{
+    filter: invert(1);
+}
+.faqbox:hover{
+    background-color: rgb(87, 84, 84);
+}
+.faq .last{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+.faq .last span{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px;
+}
+footer{
+    color:white;
+    max-width: 60vw;
+    margin: auto;
+    height: 40vh;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 95px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(197, 185, 185);
+    font-size: 14px;
+
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    
+}
+.question{
+    font-size: 20px;
+    padding: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.copy{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .button{
+        display: flex;
+    }
+    .button .btn1 {
+        position: relative;
+        z-index: 10;
+        width: 122px;
+        height: 35px;
+        font-size: 20px;
+        background-color: rgb(0, 9, 3);
+        color: white;
+        border: none;
+        margin: -38px 0 2px 16px;
+    }
+    .button .btn2{
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        font: bold;
+        border: none;
+        margin: -37px 0 0px 11px;
+    }
+    .main{
+        background-image: url(bg.jpg);
+        background-position: center  center;
+        background-size: max(1200px,100vw);
+        background-repeat: no-repeat;
+        height: 80vh;
+        width: 100vw;
+        position: relative;
+    }
+    .main .box{
+        height: 80vh;
+        width: 100%;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        background-color: black;
+    
+    }
+
+}
